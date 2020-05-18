@@ -14,9 +14,7 @@ from sklearn.linear_model import ElasticNet
 
 import mlflow
 import mlflow.sklearn
-# if off the gpu
-# mlflow.set_tracking_uri("http://amraelp00007319.pfizer.com:10010/")
-# if on the gpu
+
 mlflow.set_tracking_uri("http://localhost:10010")
 
 def eval_metrics(actual, pred):
